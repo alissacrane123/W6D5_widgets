@@ -20,11 +20,11 @@ class Clock extends React.Component {
 
     render() {
         return (
-        <h1 class="clock">           
+        <h1 className="clock">           
             Widgets4Life <br/>
-            {String(this.state.time.getHours())}:
-            {String(this.state.time.getMinutes())}:
-            {String(this.state.time.getSeconds())}              
+            {this.state.time.getHours()}:
+            {this.state.time.getMinutes()}:
+            {this.state.time.getSeconds()}            
         </h1>
         );
     }
